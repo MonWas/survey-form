@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Australian Shepherd Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve this breed
+        </p>
+      </header>
+      <form action="#" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            size="25"
+            placeholder="Please enter your full name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            minlength="18"
+            maxlength="33"
+            size="25"
+            pattern=".+@"
+            placeholder="Please enter your email address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            id="number"
+            class="form-control"
+            name="age"
+            min="18"
+            max="99"
+            placeholder="Please enter your current age"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>How many Aussies do you own?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Please select a value</option>
+            <option value="0">none</option>
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What gender do you prefer?</p>
+          <label for="female">
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              class="input-radio"
+            />Female
+          </label>
+          <label for="male">
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              class="input-radio"
+            />Male
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Which coat color do you like best?</p>
+          <label for="color">
+            <input
+              type="checkbox"
+              name="color"
+              class="input-checkbox"
+              value="black"
+            />Black
+          </label>
+          <label for="color">
+            <input
+              type="checkbox"
+              name="color"
+              class="input-checkbox"
+              value="red"
+            />Red
+          </label>
+          <label for="color">
+            <input
+              type="checkbox"
+              name="color"
+              class="input-checkbox"
+              value="black-tricolor"
+            />Black Tricolor
+          </label>
+          <label for="color">
+            <input
+              type="checkbox"
+              name="color"
+              class="input-checkbox"
+              value="red-tricolor"
+            />Red Tricolor
+          </label>
+          <label for="color">
+            <input
+              type="checkbox"
+              name="color"
+              class="input-checkbox"
+              value="blue-merle"
+            />Blue Merle
+          </label>
+          <label for="color">
+            <input
+              type="checkbox"
+              name="color"
+              class="input-checkbox"
+              value="red-merle"
+            />Red Merle
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            class="input-textarea"
+            placeholder="Please enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
